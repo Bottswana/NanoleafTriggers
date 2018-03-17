@@ -1,0 +1,35 @@
+{
+    "poll-interval": 5000,
+    "devices":
+    [
+        {
+            "friendly-name": "Your-Leaf-Name",
+            "device-ip": "192.168.xxx.xxx",
+            "token": "",
+            "leaf-default": { "r": 0, "g": 0, "b": 0 },
+            "leaves":
+            [
+                {
+                    "use-module": "examplemodule",
+                    "method": "example",
+                    "data": 1,
+                    "responses":
+                    {
+                        "ok": { "r": 0, "g": 255, "b": 0 },
+                        "down": { "r": 255, "g": 0, "b": 0 }
+                    }
+                },
+                {
+                    "use-module": "examplemodule",
+                    "method": "example",
+                    "data": 2,
+                    "responses":
+                    {
+                        "ok": { "r": 0, "g": 255, "b": 0 },
+                        "down": { "r": 255, "g": 0, "b": 0 }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -9,8 +9,6 @@
 global.WorkingDirectory = 'C:\\Users\\James\\Desktop\\nanoleaf_monitoring';
 global.Version = '1.0.0';
 
-global.Test = false;
-
 // Nothing user configurable below this line \\
 var Common = require(global.WorkingDirectory+'/Core/Common').Common;
 var Worker = require(global.WorkingDirectory+'/Core/Worker').Worker;
