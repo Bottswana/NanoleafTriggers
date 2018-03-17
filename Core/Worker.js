@@ -59,11 +59,11 @@ Worker.runInterval = function()
         function(Devices, callback)
         {
             if( Devices.length <= 0 ) return callback(null); // Deliberately drop out here
-            Common.log(0, "Worker", "Starting background process for configured instances");
+            //Common.log(0, "Worker", "Starting background process for configured instances");
             Devices.forEach(element =>
             {
                 var TargetLeaf = new Nanoleaf({ host: element['device-ip'], token: element['token'] });
-                Common.log(0, "Worker", "Processing instance name: " + element['friendly-name']);
+                //Common.log(0, "Worker", "Processing instance name: " + element['friendly-name']);
                 if( !Worker.RunningInstances[element] ) Worker.handleBackground(element, TargetLeaf);
             });
 
@@ -213,6 +213,7 @@ Worker.runEffectUpdater = function(element)
 
     Object.keys(PendingChanges).forEach(key => ChangeList.push(PendingChanges[key]));
     var TargetLeaf = new Nanoleaf({ host: element['device-ip'], token: element['token'] });
+    TargetLeaf.setBrightness(element.brightness).catch(t => {});
     TargetLeaf.setStaticPanel(ChangeList).catch(t => {});
 }
 

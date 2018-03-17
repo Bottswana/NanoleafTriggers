@@ -3,6 +3,7 @@
     "devices":
     [
         {
+            "brightness": 100,
             "friendly-name": "Your-Leaf-Name",
             "device-ip": "192.168.xxx.xxx",
             "token": "",
