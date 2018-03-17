@@ -6,7 +6,8 @@
   "dependencies": {
     "async-waterfall": "^0.1.5",
     "chalk": "^2.3.2",
-    "nanoleaves": "^1.2.0"
+    "nanoleaves": "^1.2.0",
+    "request": "^2.85.0"
   },
   "devDependencies": {},
   "scripts": {
