@@ -1,0 +1,24 @@
+{
+  "name": "nanoleaf-monitoring",
+  "version": "1.0.0",
+  "description": "Display build status on nanoleafs",
+  "main": "Server.js",
+  "dependencies": {
+    "async-waterfall": "^0.1.5",
+    "chalk": "^2.3.2",
+    "nanoleaves": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Nanoleaf"
+  ],
+  "author": "James Botting",
+  "license": "MIT"
+}
