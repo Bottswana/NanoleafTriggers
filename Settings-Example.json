@@ -29,6 +29,18 @@
                         "ok": { "r": 0, "g": 255, "b": 0 },
                         "down": { "r": 255, "g": 0, "b": 0 }
                     }
+                },
+                {
+                    "use-module": "gitlab",
+                    "method": "getPipelineStatus",
+                    "data": "1,master",
+                    "responses":
+                    {
+                        "failed": { "r": 255, "g": 0, "b": 0 },
+                        "success": { "r": 0, "g": 255, "b": 0 },
+                        "pending": { "r": 255, "g": 170, "b": 0 },
+                        "running": { "r": 0, "g": 0, "b": 128 }
+                    }
                 }
             ]
         }
